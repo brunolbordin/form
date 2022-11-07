@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 465px;
+
+    background: #293241;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background: #BFD7E4;
+
+}
+
+.page {
+    width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.page h2 {
+    margin-top: 50px;
+}
+
+header {
+    margin-top: 107px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+
+    font-size: 36px;
+    line-height: 45px;
+
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Staatliches', cursive;
+
+    font-size: 24px;
+    line-height: 34px;
+
+    color: #253B51;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+img {
+    margin-top: 30px;
+}
+
+
+form {
+    padding: 64px;
+
+    margin-top: 153px;
+
+    background: #FFFFFF;
+
+    min-height: 300px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+
+fieldset {
+    border: none;
+
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+}
+
+
+fieldset legend {
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.input-name {
+    display: flex;
+    text-align: start;
+    gap: 22px;
+}
+
+
+.info-pessoais label {
+    color: #4E4958;
+
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.info-pessoais input {
+    border-radius: 8px;
+
+    border: 1px solid #E6E6F0;
+
+    background: FAFAFC;
+
+    height: 56px;
+
+    padding: 0 14px;
+
+}
+
+.email {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.email span {
+    margin-left: 9px;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #C1BCCC;
+}
