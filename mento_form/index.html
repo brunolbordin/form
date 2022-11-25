@@ -27,7 +27,7 @@
                 agendar a sua mentoria
             </p>
         </header>
-        <form>
+        <form id="form-mentoria">
             <fieldset>
                 <div class="fieldset-wrapper">
                     <legend>
@@ -36,21 +36,21 @@
                     <div class="input-name-wrapper">
                         <div class="input-wrapper">
                             <label for="event-name">Nome</label>
-                            <input type="text" id="event-name">
+                            <input type="text" id="event-name" required>
                         </div>
 
                         <div class="input-wrapper">
                             <label for="event-last-name">Sobrenome</label>
-                            <input type="text" id="event-last-name">
+                            <input type="text" id="event-last-name" required>
                         </div>
                     </div>
                     <div class="input-wrapper">
                         <label for="event-email">Email <span>(digite um email válido)</span></label>
-                        <input type="email" id="event-email">
+                        <input type="email" id="event-email" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="event-senha">Senha <span>(mínimo de 6 caracteres)</span></label>
-                        <input type="password" id="event-senha">
+                        <input type="password" id="event-senha" required>
                     </div>
                 </div>
             </fieldset>
@@ -62,7 +62,7 @@
                     </legend>
                     <div class="input-wrapper">
                         <label for="event-name-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
-                        <input type="text" id="event-name-mentor">
+                        <input type="text" id="event-name-mentor" required>
                     </div>
                 </div>
             </fieldset>
@@ -77,11 +77,11 @@
                         <div class="col-3">
                             <div class="input-wrapper">
                                 <label for="event-date-first">Data <span>(DD/MM/AAAA)</span></label>
-                                <input type="date" id="event-date-first">
+                                <input type="date" id="event-date-first" required>
                             </div>
                             <div class="input-wrapper">
                                 <label for="event-begin-first">Das</label>
-                                <input type="time" id="event-begin-first">
+                                <input type="time" id="event-begin-first" required>
                             </div>
                             <div class="input-wrapper">
                                 <label for="event-end-first">Até</label>
@@ -94,11 +94,11 @@
                         <div class="col-3">
                             <div class="input-wrapper">
                                 <label for="event-date-second">Data <span>(DD/MM/AAAA)</span></label>
-                                <input type="date" id="event-date-second">
+                                <input type="date" id="event-date-second" required>
                             </div>
                             <div class="input-wrapper">
                                 <label for="event-begin-second">Das</label>
-                                <input type="time" id="event-begin-second">
+                                <input type="time" id="event-begin-second" required>
                             </div>
                             <div class="input-wrapper">
                                 <label for="event-end-second">Até</label>
@@ -110,7 +110,7 @@
             </fieldset>
         </form>
         <footer>
-            <input class="button" type="submit" value="SALVAR">
+            <input form="form-mentoria" class="button" type="submit" value="SALVAR">
         </footer>
     </div>
 </body>

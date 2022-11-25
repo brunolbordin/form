@@ -89,6 +89,10 @@ fieldset legend {
     padding-bottom: 16px;
 }
 
+input:invalid {
+    border: 1px solid red;
+}
+
 .input-wrapper {
     display: flex;
     flex-direction: column;
@@ -179,4 +183,9 @@ footer .button {
 
     font-size: 20px;
     line-height: 26px;
+}
+
+.button:hover {
+    background: #cf3857;
+    cursor: pointer;
 }
